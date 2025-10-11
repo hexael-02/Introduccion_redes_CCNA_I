@@ -1,0 +1,10 @@
+ipconfig
+ping (ip router)
+ping (ip red externa)
+ping (url)
+tracert (sitio web)
+netsatat
+netstat -a 
+ipconfig/renew
+ipconfig/release
+ipconfig/all

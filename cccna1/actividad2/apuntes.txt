@@ -1,0 +1,1 @@
+al utilizar excalidraw para hacer un tipo de diagrama o diseño pude entender como se conectan los diferentes dispositivos finales (telefono, pc, tv, etc..) de mi disositivo de red o router en mi diseño puse cuadros mi router era un circulo y los cuadrados pequeños los dispositivos finales.

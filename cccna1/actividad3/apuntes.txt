@@ -1,1 +1,31 @@
-al utilizar excalidraw para hacer un tipo de diagrama o diseño pude entender como se conectan los diferentes dispositivos finales (telefono, pc, tv, etc..) de mi disositivo de red o router en mi diseño puse cuadros mi router era un circulo y los cuadrados pequeños los dispositivos finales.
+nube: es un gran conjutno de computadoras o espacios de almaceenamiento donde puedes guardar informacion importante o personal para mantener un resaldo de tus datos en caso de algun inconveniente 
+
+Desktop: es una computadora personal de escritorio, que tiene un monitor, teclado y un unca caja grande 
+
+end point router: es quien se conecta al proveedor de internet, este es el punto final de la red del proveedor y el inicio de nosotros(el cliente)
+
+firewall: es como una barrera o puerta que decide que informacion pasa y cual no
+
+laptop: es como uan computadora de escritorio, sin embargo esta es mas ligera y tiene todo integrado tclado, mause, patalla, bateria, etc..
+
+layer switch: este dispositivo dirige la informacion de dentro de una red grande, organizando el trafico de  inteligente
+
+radio tower: una torre alta que envia y recibe señales de radio y nos permite utilizar el internet o el telefono a distancia 
+
+router: este es quien se encarga enviar la informacion de un dispositivo hacia el internet 
+
+router firewall: es una caja que dirige el trafico de internet y a vez le protege de peligros 
+
+server: una computadora muy potente que esta todo el tiempo para guardar informacion importante, o ejecutar otras funciones
+
+smartphone: es un telefono inteligente que tiene pantalla tactil y permite realizar llamadas o usar aplicaciones 
+
+smart tv: es una television que puede usar aplicaciones y conectarse a internet 
+
+switch: una caja que conecta muchos dispositivos a una red local permitiendole hablar entre si de manera ordenada 
+
+wireless access controller: es como un cerebro que administra todas las antenas inalambricas a la vez 
+
+wireless antenna: este accesorio permite a un dispositivo enviar y recibir señales de manera inalambrica 
+
+wireless router: es un router que direge la informacion a travez de wifi para que los dispostivos se conecten.

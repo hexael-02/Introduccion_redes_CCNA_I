@@ -8,3 +8,6 @@ netstat -a
 ipconfig/renew
 ipconfig/release
 ipconfig/all
+-------------------------------------------------------------------------------------------------
+echo "klk" > klk.txt (guarda una palabra especifica en un archivo)
+ipconfig > configip.txt (guarda la informacion del comando)

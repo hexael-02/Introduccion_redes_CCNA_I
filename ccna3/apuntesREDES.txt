@@ -30,25 +30,88 @@ configuracion basia para todos los equipos en este lab (swith & routers)
 en 
 conf t
 no ip domain lookup
-banner motd #si entras a este equipo sin permisos, caeras preso mi loco
-hostname SD-DAPIATO-R1
-enable secret dogs000#
-username JMEP privilege 15 secret hola123@
+banner motd #si entras a este equipo sin permisos, caeras preso mi loco#
+hostname GOOGLE-SW1
+enable secret dogs000@
+username JEMP privilege 15 secret tengen123@
 ip domain-name dapiato.com
 crypto key generate rsa
 1024
-ipssh time-out 60
+ip ssh time-out 60
 ip ssh version 2
 ip ssh authentication-retries 3
 line con 0
-pass NBA123*
+pass CCNA123*
 logging synchronous
 login local 
 line vty 0 15
 login local 
-loggin syncronous
+loggin synchronous
 transport input ssh
 no transport input telnet
 end 
-copy running-config startup-config
+copy run start
 reload
+
+
+
+plan de direccionamiento ipv4 por cadar red
+
+Red Dapiato SD
+
+	direccion ipv4 de red = 198.0.2.0
+	prefijo de red = /27
+	mascara de subred = 255.255.255.224
+	cantidad de direcciones ipv4 = 32
+	cantidad de equipos = 30
+	direccion ipv4 del router = 198.0.2.1
+	direccion ipv4 del switch 1 = 198.0.2.2
+	direccion ipv4 del switch 2 = 198.0.2.3
+	direccion ipv4 del broadcast = 198.0.2.31
+	direcciones ipv4 disponibles = 30 
+	direccion ipv4 de server = 198.0.2.4
+	direcciones ipv4 estaticas:
+			soporte =    198.0.2.5
+			coordinador = 198.0.2.6
+			secretaria = 198.0.2.7
+			director = 198.0.2.8
+	direccion ipv4 por dhcp=
+
+vlsm = variable lenght subnet mask(mascara de subred de longitud variable )
+
+paso 1: identificar las propiedades de la direccion ipv4 por defecto
+
+198.0.2.0 /24 (255.255.255.0) = 256 direcciones ipv4
+
+paso 2: identificar la necesidad de la red actual 
+
+equipos necesarios: 30
+
+paso 3. modificar la mascara de subred, para ajustarla a las necesidades
+reales
+
+	1.tomar la porcion de la mascara de subred que se puede modificar
+		.0
+	2.convertir la porcion de la mascara de subred en binario 
+		00000000
+	3.encender los bits necesaris hasta que la mascara se ajuste al
+	  requerimiento 
+		11100000
+	4. convertir la porcion de la mascara de subred modificada en 
+	binario a decimal
+		.224
+	5.vuelvo a ensamblar la nueva mascara de subred
+		255.255.255.224
+		/27
+
+el prefijo de red es 24 por que 255 es el equivalente a 8 unos y 8 x 3 
+es igual a 24
+255 = 11111111
+255 = 11111111
+255 = 11111111
+  0 = 00000000
+
+128 64  32  16  8  4  2  1
+ 1   1   1   1  1  1  1  1 = 256
+ 0   0  0  0  0  0  0  0 = 0
+ 1   1  1  0  0  0  0  0  = 32
